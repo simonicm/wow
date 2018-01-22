@@ -1,0 +1,71 @@
+<!--
+  Generated template for the CustomPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>custom</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<h3>Exercises</h3>
+
+	<ion-item>
+		<ion-label>Back and Biceps</ion-label>
+		<ion-select [(ngModel)]="exercisespull" multiple="true">
+			<ion-option>Chin Ups</ion-option>
+			<ion-option>Pull Ups</ion-option>
+			<ion-option>L-sit Pull Ups</ion-option>
+			<ion-option>Muscle Ups</ion-option>
+			<ion-option>Archer Pull Ups</ion-option>
+			<ion-option>Pull Overs</ion-option>
+		</ion-select>
+	</ion-item>
+
+	<ion-item>
+		<ion-label>Chest, Shoulders and Triceps</ion-label>
+		<ion-select [(ngModel)]="exercisespush" multiple="true">
+			<ion-option>Push Ups</ion-option>
+			<ion-option>Wide Pushups</ion-option>
+			<ion-option>Diamond Push Ups</ion-option>
+			<ion-option>Handstand Push Ups</ion-option>
+			<ion-option>Pike Push Ups</ion-option>
+			<ion-option>Decline Push Ups</ion-option>
+		</ion-select>
+	</ion-item>
+
+	<ion-item>
+		<ion-label>Legs</ion-label>
+		<ion-select [(ngModel)]="exerciseslegs" multiple="true">
+			<ion-option>Squats</ion-option>
+			<ion-option>Lunges</ion-option>
+			<ion-option>Squat Jumps</ion-option>
+			<ion-option>Wall Sit</ion-option>
+			<ion-option>Pistol Squats</ion-option>
+			<ion-option>Shrimp Squats</ion-option>
+		</ion-select>
+	</ion-item>
+
+	<h3>Rest</h3>
+
+	<ion-item>
+		<ion-input type="rest_count" placeholder="Rest"></ion-input>
+	</ion-item>
+
+	<h3 color:secondary>Rounds</h3>
+
+	<ion-item>
+		<ion-input type="rounds_count" placeholder="Rounds"></ion-input>
+	</ion-item>
+
+	<div>
+		<button id="custom_start" ion-button round [navPush]="typePage">START</button>
+	</div>
+</ion-content>
