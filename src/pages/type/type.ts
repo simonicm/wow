@@ -27,7 +27,3 @@ export class TypePage {
   }
 
 }
-
-function customPage(){
-	location.href= CustomPage;
-}
