@@ -15,13 +15,13 @@
 
 <ion-content class="card-background-page" padding>
 	
-	<ion-card>
+	<ion-card [navPush]="customPage">
 		<img src="assets/imgs/image_custom.jpg"/>
 		<div class="card-title">CUSTOM</div>
 		<div class="card-subtitle">Create your custom workout</div>
 	</ion-card>
 
-	<ion-card onclick="alert();">
+	<ion-card onclick="alert('Stran je še v izdelavi');">
 		<img src="assets/imgs/image_premade.jpg"/>
 		<div class="card-title">PREMADE</div>
 		<div class="card-subtitle">Choose one of WoW Workouts</div>
